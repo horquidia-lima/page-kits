@@ -1,17 +1,25 @@
-* {
+/* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --gray-primary: #4D4D4D;
+  --white: #FFFFFF;
+  --red: #F55253;
+
+  --font-main: "Poppins", sans-serif;
+}
+
 input, button {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-main);
   border: none;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: #4D4D4D;
+  font-family: var(--font-main);
+  color: var(--gray-primary);
 }
 
 li {
@@ -43,17 +51,17 @@ header .menu ul{
 }
 
 header .menu a {
-  color: #4D4D4D;
+  color: var(--gray-primary);
   font-weight: 500;
   line-height: 24px;
 }
 
 .menu li:first-child a{
-  color: #F55253;
+  color: var(--red);
 }
 
 header .menu-search {
-  background: #FFFFFF;
+  background: var(--white);
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
 
@@ -106,7 +114,7 @@ header .menu-search > img {
 }
 
 /*SECTION HERO*/
-
+/*
 .hero {
   max-width: 960px;
   margin: 0 auto;
@@ -116,7 +124,7 @@ header .menu-search > img {
   gap: 38px;
   /*flex-wrap: wrap;*/
 }
-
+/*
 .hero-info {
   display: flex;
   flex-direction: column;
@@ -208,10 +216,10 @@ header .menu-search > img {
   letter-spacing: -0.01em;
   
   color: #363636;
-}
+}*/
 
 /*SECITON SERVICES*/
-
+/*
 .services {
   background: #FEF5F5;
   text-align: center;
@@ -271,7 +279,7 @@ header .menu-search > img {
   z-index: -1;
   transform: rotate(-6deg);
 }*/
-
+/*
 .card h4 {
   font-weight: 600;
   font-size: 1.375em;
@@ -293,7 +301,7 @@ header .menu-search > img {
 }
 
 /*SECTION containerTwo*/
-
+/*
 .containerTwo {
   display: flex;
   justify-content: space-between;
@@ -317,7 +325,8 @@ header .menu-search > img {
   position: relative;
   min-width: 300px;
   
-}
+}*/
+/*
 
 .card-product {
   background: #ffffff;
@@ -548,6 +557,141 @@ header .menu-search > img {
   margin-top: 26px;
   margin-bottom: 8px;
 }
+
+.containerFour{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  max-width: 1040px;
+  margin: 0 auto;
+}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-primary: #4d4d4d;
+  --gray-secondary: #232323;
+  --white: #ffffff;
+  --white-secondary: #f2f2f2;
+  --white-third: #fffdfd;
+  --red: #f55253;
+
+  --font-main: "Poppins", sans-serif;
+  --font-medium: 500;
+  --font-semiBold: 600;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--gray-primary);
+}
+
+input,
+button,
+form {
+  font-family: var(--font-main);
+  border: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-primary);
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.header-container {
+  max-width: 1024px;
+  margin: 32px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 10px;
+}
+
+.header-logo {
+  max-width: 154px;
+}
+
+.header-nav ul {
+  gap: 39px;
+
+  font-weight: var(--font-medium);
+  line-height: 24px;
+}
+
+.header-nav ul li:first-child a {
+  color: var(--red);
+}
+
+.search-form {
+  align-items: center;
+  max-width: 300px;
+
+  background: var(--white);
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  padding: 13px 20px;
+
+  position: relative;
+}
+
+.search-form > svg {
+  margin-right: 8px;
+}
+
+.search-form input::placeholder {
+  font-weight: var(--font-medium);
+  font-size: 0.875em;
+  line-height: 14px;
+
+  color: var(--gray-secondary);
+}
+
+.search-line {
+  content: "";
+  height: 27px;
+  border: 1.5px solid var(--white-secondary);
+  display: block;
+  margin-right: 16px;
+}
+
+.bag-count {
+  width: 28px;
+  height: 28px;
+  background-color: var(--red);
+  border-radius: 50%;
+  color: var(--white-third);
+  text-align: center;
+  font-size: 0.875em;
+  letter-spacing: 0.005em;
+  padding-top: 4px;
+  font-weight: var(--font-semiBold);
+
+  position: absolute;
+  right: -2px;
+  top: -11px;
+}
+
+
 
 
 
